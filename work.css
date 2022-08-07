@@ -1,0 +1,235 @@
+body{
+    margin: 0%;
+    padding: 0%;
+    border-collapse: collapse;
+    box-sizing: border-box;
+}
+/* start: work banner */
+.work-banner{
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+.work-banner img{
+    width: 100%;
+    height: 650px;  
+    filter: brightness(40%);
+    object-fit: cover;
+}
+.work-banner h1{
+    position: absolute;
+    top: 200px;
+    left: 100px;
+    font-size: 78px;
+    font-weight: normal;
+    color: #fff;
+    z-index: 99;
+}
+.work-banner .main-div{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position: absolute;
+    right: 0%;
+    bottom: 0%;
+    background-color: #fff;
+}
+.work-banner .main-div h6{
+    color: black;
+    font-size: 18px;
+    font-weight: 700;
+}
+.work-banner .main-div p{
+    color: 1#8c8c8c;
+    font-size: 16px;
+}
+.work-banner .main-div .plain-div{
+    padding: 50px;
+}
+.work-banner .main-div .black-div{
+    background-color: black;
+    padding: 50px;
+}
+.work-banner .main-div .black-div h6{
+    color: white;
+    font-size: 18px;
+}
+
+/* start: filter section */
+.filter{
+    margin: 88px 0px;
+}
+.filter .filter-toggle .options{
+    float: right;
+}
+#box h2{
+    color: #8c8c8c;
+    font-weight: bold;
+    font-size: 24px;
+    margin: 30px 0px;
+}
+#box .content{
+    display: flex;
+    align-items: center;
+    gap: 100px;
+}
+#box .content ul{
+    list-style: none;
+    padding-left: 0px !important;
+    font-size: 28px;
+    font-weight: 400;
+}
+#box .content ul a{
+    text-decoration: none;
+    color: black;
+}
+#box .content ul a:hover{
+    color: #8c8c8c;
+}
+#box .content ul li{
+    margin-bottom: 30px;
+}
+.filter-toggle .nav{
+    align-items: center !important;
+    justify-content: flex-end;
+    gap: 10px !important;
+}
+.filter-toggle .nav p{
+    margin: 0px !important;
+}
+.filter-toggle .nav-pills .nav-link.active{
+    
+    background-color: #69686854 !important;
+    padding: 4px 10px !important;
+    font-weight: 500;
+    font-size: 18px !important;
+    text-align: center;
+    color: black !important;
+    border-radius: 50% !important;
+}
+.filter-toggle .nav-pills .nav-link{
+    font-weight: 500;
+    font-size: 18px !important;
+    padding: 4px 10px !important;
+    border-radius: 50% !important;
+    text-align: center;
+    color: #8c8c8c !important; 
+    background-color: #69686854 !important; 
+}
+.grid-cards{
+    margin: 80px 0px;
+}
+.card{
+    border: 0px transparent !important;
+}
+.card img{
+    width: 100%;
+    height: 325px;
+    object-fit: cover;
+    transition: 0.7s;
+}
+.card{
+    position: relative;
+}
+.card .icon{
+    position: absolute;
+    transform: translate(1600%, 650%);
+    color: white;
+    visibility: hidden;
+}
+.card img:hover{
+    cursor: pointer;
+    filter: brightness(40%);
+    transition: 0.7s;
+}
+/* .card img:hover .icon{
+    visibility: visible !important;
+} */
+.card .name{
+    text-decoration: none;
+    font-size: 18px;
+    color: black !important;
+    font-weight: bold;
+    padding: 30px 0px; 
+}
+.card .name:hover{
+    color: #8c8c8c !important;
+    cursor: pointer;
+}
+.card a{
+    color: #8c8c8c;
+    cursor: pointer;
+    font-size: 16px;
+}
+.card a:hover{
+    color: #8c8c8c;
+}
+.list-cards{
+    margin: 80px 0px;
+}
+.list-cards .image img{
+    width: 100%;
+    height: 470px;
+    object-fit: cover;
+    transition: 0.7s; 
+}
+.list-cards .image img:hover{
+    cursor: pointer;
+    filter: brightness(40%);
+    transition: 0.7s;
+}
+.list-cards .text .name{
+    text-decoration: none;
+    font-size: 20px;
+    color: black !important;
+    font-weight: bold;
+    padding: 30px 0px; 
+}
+.list-cards .text{
+    height: 470px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.list-cards .text ul{
+    list-style-type: none;
+}
+.list-cards .text ul li{
+    padding: 10px;
+}
+.list-cards .text .name:hover{
+    color: #8c8c8c !important;
+    cursor: pointer;
+}
+.list-cards .text a{
+    color: #8c8c8c;
+    cursor: pointer;
+    font-size: 18px;
+}
+.list-cards .text a:hover{
+    color: #8c8c8c;
+}
+
+/* start: media query */
+@media (max-width: 575.98px){
+    .work-banner{
+        height: 317px;
+    }
+    .work-banner h1{
+        font-size: 35px !important;
+        left: 70px;
+        top: 100px;
+    }
+    .main-div{
+        display: none !important;
+    }
+    .filter-toggle #pills-tab{
+        display: none !important;
+    }
+    .card img{
+        height: 245px;
+    }
+    .card .name{
+        padding: 10px 0px;
+    }
+}

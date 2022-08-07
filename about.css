@@ -1,0 +1,129 @@
+/* start: about banner */
+.about-banner{
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+.about-banner img{
+    width: 100%;
+    height: 650px;  
+    filter: brightness(40%);
+    object-fit: cover;
+}
+.about-banner h1{
+    position: absolute;
+    top: 200px;
+    left: 100px;
+    font-size: 78px;
+    font-weight: normal;
+    color: #fff;
+    z-index: 99;
+}
+.about-banner .main-div{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position: absolute;
+    right: 0%;
+    bottom: 0%;
+    background-color: #fff;
+}
+.about-banner .main-div h6{
+    color: black;
+    font-size: 18px;
+    font-weight: 700;
+}
+.about-banner .main-div p{
+    color: #8c8c8c;
+    font-size: 16px;
+}
+.about-banner .main-div .plain-div{
+    padding: 50px;
+}
+.about-banner .main-div .black-div{
+    background-color: black;
+    padding: 50px;
+}
+.about-banner .main-div .black-div h6{
+    color: white;
+    font-size: 18px;
+}
+/* start: about banner bottom text */
+.about{
+    padding: 125px 0px;
+}
+.about .about-text h3{
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+.about .about-text p{
+    font-size: 18px;
+    margin-bottom: 80px;
+}
+.about-logo img{
+    height: 120px;
+    width: 175px;
+    margin-bottom: 70px;
+}
+.about .slide-banner{
+    padding: 315px 0px;
+    background: url(images/about-slide-banner.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+.about .subtitle h2{
+    padding-top: 125px;
+    font-size: 35px;
+}
+.about .subtitle p{
+    font-size: 14px;
+    padding: 85px 0px;
+}
+.team-member{
+    position: relative;
+    transition: all 0.5s ease-in-out;
+    margin-bottom: 30px;
+}
+.team-member img{
+    width: 100%;
+    height: 100%;
+}
+.team-desc{
+    position: absolute;
+    top: 20px;
+    left: 30px;
+    width: 100%;
+    height: 100%;
+    display: none;
+    transition: all 0.5s ease-in-out;
+}
+.team-desc .icon{
+    position: absolute;
+    bottom: 40px;
+    right: 50px;
+    display: flex;
+    gap: 15px;
+}
+.team-desc .icon .icon-contact{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    color: #fff;
+    background-color: black;
+    padding: 8px 8px;
+    border-radius: 100%;
+}
+.team-desc .icon .icon-contact:hover{
+    color: black;
+    background-color: white;
+    cursor: pointer;
+}
+.team-member:hover .team-desc{
+    display: block;
+}
+.team-member:hover{
+    opacity: 0.5;
+    transition: all 0.5s ease-in-out;
+}

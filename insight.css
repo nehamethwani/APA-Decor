@@ -1,0 +1,86 @@
+/* start: insigt banner */
+.insight-banner{
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+.insight-banner img{
+    width: 100%;
+    height: 650px;  
+    filter: brightness(40%);
+    object-fit: cover;
+}
+.insight-banner h1{
+    position: absolute;
+    top: 200px;
+    left: 100px;
+    font-size: 78px;
+    font-weight: normal;
+    color: #fff;
+    z-index: 99;
+}
+.insight-banner .main-div{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position: absolute;
+    right: 0%;
+    bottom: 0%;
+    background-color: #fff;
+}
+.insight-banner .main-div h6{
+    color: black;
+    font-size: 18px;
+    font-weight: 700;
+}
+.insight-banner .main-div p{
+    color: 1#8c8c8c;
+    font-size: 16px;
+}
+.insight-banner .main-div .plain-div{
+    padding: 50px;
+}
+.insight-banner .main-div .black-div{
+    background-color: black;
+    padding: 50px;
+}
+.insight-banner .main-div .black-div h6{
+    color: white;
+    font-size: 18px;
+}
+/* start: insight products */
+.insight-product{
+    padding: 125px 0px;
+}
+.insight-product .insight-img img{
+    width: 100%;
+    height: 455px;
+    object-fit: cover;
+}
+.insight-product .insight-text{
+    height: 455px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+.insight-product .row{
+    margin-bottom: 100px;
+}
+.insight-product .insight-text h4{
+    font-size: 24px;
+    padding: 30px 0px;
+}
+.insight-product .insight-text h4:hover{
+    color: #8c8c8c;
+}
+.insight-product .insight-text p a{
+    color: black;
+    font-size: 18px;
+}
+.insight-product .insight-text p a:hover{
+    color: #8c8c8c;
+}
+.insight-product a:hover{
+    color: black;
+}
